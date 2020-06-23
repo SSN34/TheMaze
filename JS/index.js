@@ -49,12 +49,24 @@ function setup() {
 	EndPos = new Player(columns - 1, rows - 1);
 
 	for (var count = 0; count < 2; count++) {
-		Key.push(
-			new Player(
+		var keyTemp = new Player(
+			Math.floor(Math.random() * columns),
+			Math.floor(Math.random() * rows)
+		);
+
+		while (
+			Key.filter((x) => x.i === keyTemp.i && x.j === keyTemp.j).length >
+				0 ||
+			(StartPos.i === keyTemp.i && StartPos.j === keyTemp.j) ||
+			(EndPos.i === keyTemp.i && EndPos.j === keyTemp.j)
+		) {
+			keyTemp = new Player(
 				Math.floor(Math.random() * columns),
 				Math.floor(Math.random() * rows)
-			)
-		);
+			);
+		}
+
+		Key.push(keyTemp);
 	}
 
 	player.highlightPlayer("#FFBA63", 1);
