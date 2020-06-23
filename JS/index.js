@@ -1,6 +1,6 @@
-const columns = 10;
-const rows = 10;
-const width = 50;
+const columns = 15;
+const rows = 15;
+const width = 30;
 
 const canvas = document.getElementById("game-canvas");
 canvas.setAttribute("height", rows * width);
