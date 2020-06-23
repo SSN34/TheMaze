@@ -1,0 +1,27 @@
+.game-container{
+    text-align: center;
+}
+
+#game-canvas{
+    border: 1px solid firebrick;
+}
+
+.game-heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game-heading h1{
+    color: crimson;
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game-heading h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#salutation{
+    font-size: 10px;
+    color: darkgray;
+}
