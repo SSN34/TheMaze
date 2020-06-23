@@ -63,7 +63,7 @@ function setup() {
 		Key[count].drawKey(keyImage);
 	}
 
-	messageBox("Press 'SPACEBAR' to Start", "#000");
+	messageBox("Press 'SPACEBAR' to Start", "#000", "Use Arrow Keys to Play");
 
 	document.addEventListener("keyup", function (event) {
 		switch (event.keyCode) {
